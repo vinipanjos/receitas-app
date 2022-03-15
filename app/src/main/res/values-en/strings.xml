@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">recipesApp</string>
+    <string name="preparation_time">Time to get ready: </string>
+    <string name="number_of_servings">Number of servings: </string>
+    <string name="difficulty_recipes">Difficulty: </string>
+    <string name="minutes">minutes</string>
+    <string name="recipe_ready_image">Ready recipe image</string>
+    <string name="recipe_name">Recipe name</string>
+    <string name="description_txt">Description:</string>
+</resources>

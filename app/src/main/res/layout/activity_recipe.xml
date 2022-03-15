@@ -36,7 +36,7 @@
                 android:id="@+id/recipe_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/nome_receita"
+                android:text="@string/recipe_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/tempo_de_preparo"
+                android:text="@string/preparation_time"
                 app:layout_constraintEnd_toEndOf="@+id/recipe_name"
                 app:layout_constraintStart_toStartOf="@+id/recipe_name"
                 app:layout_constraintTop_toBottomOf="@+id/recipe_name" />
@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/numero_de_porcoes"
+                android:text="@string/number_of_servings"
                 app:layout_constraintEnd_toEndOf="@+id/time_recipe"
                 app:layout_constraintStart_toStartOf="@+id/time_recipe"
                 app:layout_constraintTop_toBottomOf="@+id/time_recipe" />
@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/dificuldade_receita"
+                android:text="@string/difficulty_recipes"
                 app:layout_constraintEnd_toEndOf="@+id/amount_people_recipe"
                 app:layout_constraintStart_toStartOf="@+id/amount_people_recipe"
                 app:layout_constraintTop_toBottomOf="@+id/amount_people_recipe" />
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Descrição:"
+                android:text="@string/description_txt"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/difficulty_recipe" />
 

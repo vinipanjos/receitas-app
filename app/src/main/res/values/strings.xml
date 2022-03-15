@@ -1,7 +1,10 @@
 <resources>
-    <string name="app_name">receitasapp</string>
-    <string name="nome_receita">Nome receita</string>
-    <string name="tempo_de_preparo">Tempo de preparo</string>
-    <string name="numero_de_porcoes">Numero de porções</string>
-    <string name="dificuldade_receita">Dificuldade</string>
+    <string name="app_name">receitasApp</string>
+    <string name="preparation_time">Tempo de preparo: </string>
+    <string name="number_of_servings">Numero de porções: </string>
+    <string name="difficulty_recipes">Dificuldade: </string>
+    <string name="minutes">minutos</string>
+    <string name="recipe_ready_image">Imagem da receita pronta</string>
+    <string name="recipe_name">Nome da receita</string>
+    <string name="description_txt">Descrição:</string>
 </resources>
