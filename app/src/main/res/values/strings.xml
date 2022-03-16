@@ -7,4 +7,5 @@
     <string name="recipe_ready_image">Imagem da receita pronta</string>
     <string name="recipe_name">Nome da receita</string>
     <string name="description_txt">Descrição:</string>
+    <string name="add_recipe">Adicionar receita</string>
 </resources>

@@ -7,8 +7,7 @@ import com.vinicius.receitasapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    lateinit var recipeAdapter:RecipeAdapter
-    lateinit var receitas: List<Receitas>
+    private lateinit var receitas: List<Receitas>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,15 +21,14 @@ class MainActivity : AppCompatActivity() {
             Receitas("Arroz", "5", "50", "oaskoask", "Dificil"))
 
 
-        SetupRecipeList();
+        setupRecipeList()
     }
 
 
-    private fun SetupRecipeList() {
+    private fun setupRecipeList() {
         binding.rvRecipes.setHasFixedSize(true)
         binding.rvRecipes.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding.rvRecipes.adapter = RecipeAdapter(receitas)
-        //recipeAdapter =  RecipeAdapter(receitasAdapter)
 
     }
 }

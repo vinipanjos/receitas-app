@@ -1,6 +1,7 @@
 package com.vinicius.receitasapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -13,10 +14,10 @@ import java.util.List;
 
 public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder> {
 
-    private List<Receitas> receitas;
+    private final List<Receitas> recipes;
 
     public RecipeAdapter(List<Receitas> receitas) {
-        this.receitas = receitas;
+        this.recipes = receitas;
     }
 
     @NonNull
@@ -29,18 +30,25 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull RecipeAdapter.ViewHolder holder, int position) {
-        Receitas receita = receitas.get(position);
+        Receitas recipe = recipes.get(position);
+        Context context = holder.itemView.getContext();
 
-        holder.binding.recipeName.setText(receita.getNome());
-        holder.binding.amountPeopleRecipe.setText(receita.getPorcoes());
-        holder.binding.difficultyRecipe.setText(receita.getDificuldade());
-        holder.binding.timeRecipe.setText(receita.getTempo());
+        holder.binding.recipeName.setText(recipe.getNome());
+        holder.binding.amountPeopleRecipe.setText(recipe.getPorcoes());
+        holder.binding.difficultyRecipe.setText(recipe.getDificuldade());
+        holder.binding.timeRecipe.setText(recipe.getTempo());
+
+        holder.itemView.setOnClickListener(view -> {
+            Intent intent = new Intent(context, RecipeActivity.class);
+            intent.putExtra(RecipeActivity.Extras.RECIPE, recipe);
+            context.startActivity(intent);
+        });
 
     }
 
     @Override
     public int getItemCount() {
-        return receitas.size();
+        return recipes.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
