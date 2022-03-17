@@ -9,4 +9,11 @@
     <string name="recipe_name">Recipe name</string>
     <string name="description_txt">Description:</string>
     <string name="add_recipe">Add recipe</string>
+    <string name="what_is_the_name">What is the name of the recipe?</string>
+    <string name="how_many">What is the serving amount?</string>
+    <string name="whats_difficulty">Whats the difficulty?</string>
+    <string name="how_long_ready">How long to get ready ?</string>
+    <string name="make_description">Make a description of the recipe</string>
+    <string name="add_button">Add</string>
+
 </resources>

@@ -8,4 +8,11 @@
     <string name="recipe_name">Nome da receita</string>
     <string name="description_txt">Descrição:</string>
     <string name="add_recipe">Adicionar receita</string>
+    <string name="what_is_the_name">Qual o nome da receita ?</string>
+    <string name="how_many">Serve quantas porções ?</string>
+    <string name="whats_difficulty">Qual a dificuldade ?</string>
+    <string name="how_long_ready">Quanto tempo para ficar pronta ?</string>
+    <string name="make_description">Faça uma descrição da receita</string>
+    <string name="add_button">Adicionar</string>
+
 </resources>
