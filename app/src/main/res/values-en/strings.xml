@@ -15,5 +15,9 @@
     <string name="how_long_ready">How long to get ready ?</string>
     <string name="make_description">Make a description of the recipe</string>
     <string name="add_button">Add</string>
+    <string name="add_iv_galery_txt">Add a picture</string>
+    <string name="add_iv_camera_txt">Take a picture</string>
+    <string name="new_recipe_txt">Nova receita</string>
+    <string name="show_sucess_message">Receita adicionada com sucesso</string>
 
 </resources>

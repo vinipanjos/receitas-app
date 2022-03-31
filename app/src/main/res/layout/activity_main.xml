@@ -4,37 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/srlRecipes"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_recipes"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:itemCount="3"
-            tools:listitem="@layout/recipe_item" />
+    android:background="@color/secondary_200"
+    tools:context=".ui.MainActivity">
 
 
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recipes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="3"
+        tools:listitem="@layout/recipe_item" />
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fac_add_recipe"
+        android:id="@+id/fab_add_recipe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:contentDescription="@string/add_recipe"
         android:backgroundTint="@color/primary_500"
-        app:layout_constraintBottom_toBottomOf="@+id/srlRecipes"
-        app:layout_constraintEnd_toEndOf="@+id/srlRecipes"
-        tools:srcCompat="@drawable/ic_add_recipe"
-        />
+        android:contentDescription="@string/add_recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:srcCompat="@drawable/ic_add_recipe" />
 </androidx.constraintlayout.widget.ConstraintLayout>

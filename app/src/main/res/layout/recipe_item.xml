@@ -1,66 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cd_content"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp">
+    android:layout_margin="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/recipe_image"
+            android:id="@+id/iv_recipe_image"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:contentDescription="@string/recipe_ready_image"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/recipe_name"
+            android:id="@+id/tv_recipe_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/recipe_image"
-            app:layout_constraintTop_toTopOf="@+id/recipe_image"
+            app:layout_constraintStart_toEndOf="@+id/iv_recipe_image"
+            app:layout_constraintTop_toTopOf="@+id/iv_recipe_image"
             tools:text="nome da receita" />
 
         <TextView
-            android:id="@+id/time_recipe"
+            android:id="@+id/tv_recipe_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="150dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintStart_toEndOf="@+id/recipe_image"
-            app:layout_constraintTop_toBottomOf="@+id/recipe_name"
+            app:layout_constraintStart_toEndOf="@+id/iv_recipe_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recipe_name"
             tools:text="10" />
 
         <TextView
-            android:id="@+id/amount_people_recipe"
+            android:id="@+id/tv_recipe_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="150dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintStart_toEndOf="@+id/recipe_image"
-            app:layout_constraintTop_toBottomOf="@+id/time_recipe"
+            app:layout_constraintStart_toEndOf="@+id/iv_recipe_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recipe_time"
             tools:text="3" />
 
         <TextView
-            android:id="@+id/difficulty_recipe"
+            android:id="@+id/tv_recipe_difficulty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="150dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintStart_toEndOf="@+id/recipe_image"
-            app:layout_constraintTop_toBottomOf="@+id/amount_people_recipe"
+            app:layout_constraintStart_toEndOf="@+id/iv_recipe_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recipe_amount"
             tools:text="Facil" />
 
         <TextView
@@ -70,8 +72,8 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:text="@string/preparation_time"
-            app:layout_constraintStart_toEndOf="@+id/recipe_image"
-            app:layout_constraintTop_toBottomOf="@+id/recipe_name" />
+            app:layout_constraintStart_toEndOf="@+id/iv_recipe_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_recipe_name" />
 
         <TextView
             android:id="@+id/amount_txt"
@@ -80,7 +82,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:text="@string/number_of_servings"
-            app:layout_constraintStart_toEndOf="@+id/recipe_image"
+            app:layout_constraintStart_toEndOf="@+id/iv_recipe_image"
             app:layout_constraintTop_toBottomOf="@+id/time_txt" />
 
         <TextView
@@ -90,19 +92,18 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:text="@string/difficulty_recipes"
-            app:layout_constraintStart_toEndOf="@+id/recipe_image"
+            app:layout_constraintStart_toEndOf="@+id/iv_recipe_image"
             app:layout_constraintTop_toBottomOf="@+id/amount_txt" />
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="20dp"
             android:text="@string/minutes"
-            app:layout_constraintBottom_toBottomOf="@+id/time_recipe"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_recipe_time"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/time_recipe"
-            app:layout_constraintTop_toTopOf="@+id/time_recipe" />
+            app:layout_constraintStart_toEndOf="@+id/tv_recipe_time"
+            app:layout_constraintTop_toTopOf="@+id/tv_recipe_time" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

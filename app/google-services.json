@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "368532648382",
+    "project_id": "simulator-dio-sports",
+    "storage_bucket": "simulator-dio-sports.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368532648382:android:e2084047b17513bb92c9ef",
+        "android_client_info": {
+          "package_name": "com.vinicius.receitasapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368532648382-94jibdg84d1melv9avc8tvcldsfi8uiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCB6egCc7hHRTq7qzlLhE2Zeed4HoeSSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368532648382-94jibdg84d1melv9avc8tvcldsfi8uiv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368532648382:android:316442ef7686a6c392c9ef",
+        "android_client_info": {
+          "package_name": "me.dio.simulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368532648382-94jibdg84d1melv9avc8tvcldsfi8uiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCB6egCc7hHRTq7qzlLhE2Zeed4HoeSSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368532648382-94jibdg84d1melv9avc8tvcldsfi8uiv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
