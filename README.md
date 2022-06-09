@@ -4,4 +4,5 @@ Um projeto de aplicativo para dispositivos Android utilizando Kotlin para armaze
   - [Activity](https://developer.android.com/jetpack/androidx/releases/activity?hl=pt-br#groovy)
   - [Room](https://developer.android.com/training/data-storage/room)
   - [LifeCycle](https://developer.android.com/training/data-storage/room)
+  - [Criar listas dinâmicas com o RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=pt-br#kotlin)
 
